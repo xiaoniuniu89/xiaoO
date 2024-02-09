@@ -8,7 +8,7 @@ const useOpenAI = () => {
 
     const systemMessage = {
       role: 'system',
-      content: 'You are an AI code assistant and we are making a react app',
+      content: 'You are an AI code assistant. You should format all messages in markdown.',
   }
 
     const newMessage = formatMessage(message, "user");
@@ -24,7 +24,7 @@ const useOpenAI = () => {
     return {
       result: result.choices[0].message as { role: string; content: string },
       userMessage: newMessage,
-      }
+    }
       
   };
 
