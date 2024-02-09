@@ -46,9 +46,9 @@ export function ChatWindow() {
             
               <div key={index} className="flex items-start mb-2">
                 {chat.role === "user" ? (
-                  <User className="mr-2 mt-2" size={20} />
+                  <User className="mr-2 mt-2" size={25} />
                 ) : chat.role === "assistant" ? (
-                  <Bot className="mr-2 mt-2" size={20} />
+                  <Bot className="mr-2 mt-2" size={25} />
                 ) : null}
                 <p className="p-2">{content}</p>
               </div>
