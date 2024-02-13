@@ -21,9 +21,6 @@ export default function Code({ children, language = "javascript" }: Props) {
 
   const lang = language === "md" ? "markdoc" : language || "markdoc";
 
-
-  console.log(children, lang, hljs.highlightAuto(children).value)
-
   return (
     <div className="code group my-2 relative" aria-live="polite">
       <pre
